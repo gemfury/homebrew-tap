@@ -1,8 +1,8 @@
 class GemfuryBeta < Formula
   desc "Hosted repo for your public and private packages"
   homepage "https://gemfury.com"
-  url "https://github.com/gemfury/homebrew-tap/releases/download/v0.9.0.rc1/gemfury-0.9.0.rc1.tar.gz"
-  sha256 "534e65eafee57ad0c867f8db0928df4ee3807b73febc63f446cc5587f1fcb88f"
+  url "https://github.com/gemfury/homebrew-tap/releases/download/v0.9.0.rc1/gemfury-beta-0.9.0.rc1.tar.gz"
+  sha256 "02b5ad6d537ba8a43d151b920c94b6065864632debfebb225b2d80daec4c9443"
   conflicts_with('gemfury')
 
   def package_name
