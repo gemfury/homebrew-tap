@@ -1,7 +1,7 @@
 class GemfuryBeta < Formula
   desc "Hosted repo for your public and private packages"
   homepage "https://gemfury.com"
-  url "https://files.nlevel.io/gemfury-0.9.0.rc1.tar.gz"
+  url "https://github.com/gemfury/homebrew-tap/releases/download/v0.9.0.rc1/gemfury-0.9.0.rc1.tar.gz"
   sha256 "534e65eafee57ad0c867f8db0928df4ee3807b73febc63f446cc5587f1fcb88f"
   conflicts_with('gemfury')
 
