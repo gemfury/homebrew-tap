@@ -1,11 +1,12 @@
-class Packtory < Formula
-  desc "An easy to use system packaging tool for your Ruby gems"
+class GemfuryBeta < Formula
+  desc "Hosted repo for your public and private packages"
   homepage "https://gemfury.com"
-  url "https://files.nlevel.io/packtory-0.1.2.tar.gz"
-  sha256 "c97f97eecf213bd051284213ad4161926290813ea7ed476caf0eb43a73041cfd"
+  url "https://files.nlevel.io/gemfury-0.9.0.rc1.tar.gz"
+  sha256 "534e65eafee57ad0c867f8db0928df4ee3807b73febc63f446cc5587f1fcb88f"
+  conflicts_with('gemfury')
 
   def package_name
-    "packtory"
+    "gemfury-beta"
   end
 
   def install
