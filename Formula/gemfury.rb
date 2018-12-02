@@ -2,7 +2,7 @@ class Gemfury < Formula
   desc "Hosted repo for your public and private packages"
   homepage "https://gemfury.com"
   url "https://github.com/gemfury/homebrew-tap/releases/download/v0.8.0/gemfury-0.8.0.tar.gz"
-  sha256 "96faf40a4204916d20806ea82ace0a0dc6b74812b8396773e1ead13f5bf62f5f"
+  sha256 "249dd00415cc5d46a2e617a87a4de7107b9f4818d076483948a8a59cafa29ab8"
 
   devel do
     url "https://github.com/gemfury/homebrew-tap/releases/download/devel/gemfury-0.9.0.rc1.tar.gz"
