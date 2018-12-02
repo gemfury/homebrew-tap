@@ -3,7 +3,11 @@ class Gemfury < Formula
   homepage "https://gemfury.com"
   url "https://github.com/gemfury/homebrew-tap/releases/download/v0.8.0/gemfury-0.8.0.tar.gz"
   sha256 "96faf40a4204916d20806ea82ace0a0dc6b74812b8396773e1ead13f5bf62f5f"
-  conflicts_with('gemfury-beta')
+
+  devel do
+    url "https://github.com/gemfury/homebrew-tap/releases/download/devel/gemfury-0.9.0.rc1.tar.gz"
+    sha256 "b1398c10807e29883912a7dbf20a4bc84125ebe076ff221440487cba41f6015b"
+  end
 
   def package_name
     "gemfury"
