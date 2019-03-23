@@ -5,8 +5,8 @@ class Gemfury < Formula
   sha256 "9e63d6127d4a2df65b8d441f18d15a0bde65a9ae730273266cf491e574b76720"
 
   devel do
-    url "https://github.com/gemfury/homebrew-tap/releases/download/v0.9.2.pre/gemfury-0.9.2.pre.tar.gz"
-    sha256 "690e6225131fe074f69da726c8ef3beec89f0b2e1dd13acfee429f6565bede30"
+    url "https://github.com/gemfury/gemfury/releases/download/v0.10.0-rc1/gemfury-0.10.0.rc1.tar.gz"
+    sha256 "9de9fa6d3aa1dbb3ae6c559257731522b8864b68a871149dffb70528de5d23a0"
   end
 
   def package_name
