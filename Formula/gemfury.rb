@@ -1,12 +1,12 @@
 class Gemfury < Formula
   desc "Hosted repo for your public and private packages"
   homepage "https://gemfury.com"
-  url "https://github.com/gemfury/gemfury/releases/download/v0.10.0/gemfury-0.10.0.tar.gz"
-  sha256 "255bf8b02bac91047df169d119101c6134f1d48c54ca4e318f87125316bb2276"
+  url "https://github.com/gemfury/gemfury/releases/download/v0.11.0/gemfury-0.11.0.tar.gz"
+  sha256 "6e82b6da5bd6e712d23e7bf51c023a1b62758403a87628fd919d04aafcf195f8"
 
   devel do
-    url "https://github.com/gemfury/gemfury/releases/download/v0.11.0.rc1/gemfury-0.11.0.rc1.tar.gz"
-    sha256 "a8c9f99a408c5aa4dfa1f94d9653cdaed600df1157ebcf4d3e342a2925b3d377"
+    url "https://github.com/gemfury/gemfury/releases/download/v0.11.0/gemfury-0.11.0.tar.gz"
+    sha256 "6e82b6da5bd6e712d23e7bf51c023a1b62758403a87628fd919d04aafcf195f8"
   end
 
   def package_name
