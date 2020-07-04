@@ -4,11 +4,6 @@ class Gemfury < Formula
   url "https://github.com/gemfury/gemfury/releases/download/v0.11.0/gemfury-0.11.0.tar.gz"
   sha256 "6e82b6da5bd6e712d23e7bf51c023a1b62758403a87628fd919d04aafcf195f8"
 
-  devel do
-    url "https://github.com/gemfury/gemfury/releases/download/v0.11.0/gemfury-0.11.0.tar.gz"
-    sha256 "6e82b6da5bd6e712d23e7bf51c023a1b62758403a87628fd919d04aafcf195f8"
-  end
-
   def package_name
     "gemfury"
   end
