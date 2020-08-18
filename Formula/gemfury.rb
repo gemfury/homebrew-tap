@@ -8,8 +8,8 @@ class Gemfury < Formula
   end
 
   head do
-    url "https://github.com/gemfury/gemfury/releases/download/v0.12.0.rc1/gemfury-0.12.0.rc1.tar.gz"
-    sha256 "50a86850c59bf87373343b64448b9804b65a5cf344209435be5241cf020274e2"
+    url "https://github.com/gemfury/gemfury/releases/download/v0.12.0-rc2/gemfury-0.12.0.rc2.tar.gz"
+    sha256 "549935fc7da0fcc4aa4ba578cf0103c7a5a811eec7f573fbc77f8659a1193dd8"
   end
 
   def package_name
