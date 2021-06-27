@@ -3,8 +3,8 @@ class Gemfury < Formula
   homepage "https://gemfury.com"
 
   stable do
-    url "https://github.com/gemfury/gemfury/releases/download/v0.11.0/gemfury-0.11.0.tar.gz"
-    sha256 "6e82b6da5bd6e712d23e7bf51c023a1b62758403a87628fd919d04aafcf195f8"
+    url "https://github.com/gemfury/gemfury/releases/download/v0.12.0/gemfury-0.12.0.tar.gz"
+    sha256 "327f4bf0727edd92ea20c094813dcd31d2f48e60564729ded2644e1075740722"
   end
 
   head do
