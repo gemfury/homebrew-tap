@@ -5,28 +5,28 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.0-alpha.3"
+  version "0.20.0-alpha.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.3/fury_0.20.0-alpha.3_macOS_64bit.tar.gz"
-      sha256 "74140c31d1c8ca6701b55afc6b2ec741699c65b8510e5697b586f3e086e29b42"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_macOS_64bit.tar.gz"
+      sha256 "3e34f220c6817108fdcf7ca3499d6182422a00e6b427856867f4c5a816254861"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.3/fury_0.20.0-alpha.3_macOS_ARM64.tar.gz"
-      sha256 "6a4afbdc4bf92e51dfb5cc90c6a62cf5581d6382baefaefca54b59f688a82d45"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_macOS_ARM64.tar.gz"
+      sha256 "fc7b5772478de7adcbc0902a6a59c494b81b8bcd023db43d335647a4f30ae8bf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.3/fury_0.20.0-alpha.3_Linux_64bit.tar.gz"
-      sha256 "ae9645d8e52f5e516786a744bbe6ca44030045f9797256bfe1dc943a1ff460d3"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_Linux_64bit.tar.gz"
+      sha256 "83ec56b7f88fd4460f83f16b10e5624b134836adacf001bc5cbf472fecb3e93f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.3/fury_0.20.0-alpha.3_Linux_ARM64.tar.gz"
-      sha256 "0367d736716880c611e2359d4085e54b741c0d1d15b5da880fc2b845c3d0cd4a"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_Linux_ARM64.tar.gz"
+      sha256 "f6ce07495d29e6bb2e53222243c80b596532c4f4c112a9f8b66508aa95ba3988"
     end
   end
 
