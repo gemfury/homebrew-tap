@@ -5,28 +5,28 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.0-alpha.4"
+  version "0.20.0-alpha.5"
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_macOS_64bit.tar.gz"
-      sha256 "3e34f220c6817108fdcf7ca3499d6182422a00e6b427856867f4c5a816254861"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_macOS_ARM64.tar.gz"
-      sha256 "fc7b5772478de7adcbc0902a6a59c494b81b8bcd023db43d335647a4f30ae8bf"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_macOS_ARM64.tar.gz"
+      sha256 "9507574f92856bdd57456fa494f9b8e82b1c8866c9deab6058043297e7daea5a"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_macOS_64bit.tar.gz"
+      sha256 "7a024b98110a53a2015174095e22fdaf46e5929c99e4865944a3193a11460e76"
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_Linux_64bit.tar.gz"
-      sha256 "83ec56b7f88fd4460f83f16b10e5624b134836adacf001bc5cbf472fecb3e93f"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.4/fury_0.20.0-alpha.4_Linux_ARM64.tar.gz"
-      sha256 "f6ce07495d29e6bb2e53222243c80b596532c4f4c112a9f8b66508aa95ba3988"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_Linux_ARM64.tar.gz"
+      sha256 "e499fadb20c68e7cb7ad632b6891a184b4548be82946f7edab888c5027315505"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_Linux_64bit.tar.gz"
+      sha256 "2f3315debe147d7cb11f0505abad33906025626bbe639a7e4124b446bf33ced1"
     end
   end
 
