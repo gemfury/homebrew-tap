@@ -9,24 +9,24 @@ class FuryCli < Formula
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_macOS_ARM64.tar.gz"
-      sha256 "9507574f92856bdd57456fa494f9b8e82b1c8866c9deab6058043297e7daea5a"
-    end
     if Hardware::CPU.intel?
       url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_macOS_64bit.tar.gz"
-      sha256 "7a024b98110a53a2015174095e22fdaf46e5929c99e4865944a3193a11460e76"
+      sha256 "957dcad41a59fb67209bd3af354a69e3a616a19d73240df1a2f77659924c5a8e"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_macOS_ARM64.tar.gz"
+      sha256 "69d913ed3e28005f681eb8ebb541d5d8ef2e0ab04685da59ef2d29a2ce8115c9"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_Linux_ARM64.tar.gz"
-      sha256 "e499fadb20c68e7cb7ad632b6891a184b4548be82946f7edab888c5027315505"
-    end
     if Hardware::CPU.intel?
       url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_Linux_64bit.tar.gz"
-      sha256 "2f3315debe147d7cb11f0505abad33906025626bbe639a7e4124b446bf33ced1"
+      sha256 "3de2b5c4fc0bcd9b66fece2c3d046ced0bd6017d9b133a17785d6a4040f38f72"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.5/fury_0.20.0-alpha.5_Linux_ARM64.tar.gz"
+      sha256 "23942a12340773cadfa5df78500d78d7fa816f99c2c124c9d69064e9c4cc4b9a"
     end
   end
 
