@@ -5,20 +5,20 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.0-alpha.6"
+  version "0.20.0-beta.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.6/fury_0.20.0-alpha.6_macOS_ARM64.tar.gz"
-      sha256 "a948c17d9fedc3914a80a4ab8f91d4a260fb653e58f818fb798a92f6236d21b3"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_macOS_ARM64.tar.gz"
+      sha256 "470d9b5be11555dd827bce24d8dd3cd29d43a30ce3469298162e5b2ee709689c"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.6/fury_0.20.0-alpha.6_macOS_64bit.tar.gz"
-      sha256 "cb96ce1a9c418526acab87c97db8361638a0e82d82bd740980d5ab43e8c95f47"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_macOS_64bit.tar.gz"
+      sha256 "05c3f4a59c0a82e93b208d4cb166e6ac84cbec6f2bd349e6dba74082307c5819"
 
       def install
         bin.install "fury"
@@ -27,17 +27,17 @@ class FuryCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.6/fury_0.20.0-alpha.6_Linux_64bit.tar.gz"
-      sha256 "bc4970cc9441cc585a9091b47984c36d9575355782d61acecf9e50040a92d3a2"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_Linux_ARM64.tar.gz"
+      sha256 "d0693f8c8cd9cc41582f3df434ebcaf9ee4d98298085a10bc7c7b78a235be87d"
 
       def install
         bin.install "fury"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-alpha.6/fury_0.20.0-alpha.6_Linux_ARM64.tar.gz"
-      sha256 "b37edf211f21fe2c16df6a3c3f5e38b9184915e69954d4bcb4642edb0e5da954"
+    if Hardware::CPU.intel?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_Linux_64bit.tar.gz"
+      sha256 "001cf437ad08a632e81c27c19dcad7966279c2da3c038b7c42b2672fbcfcff4e"
 
       def install
         bin.install "fury"
