@@ -5,20 +5,20 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.0-beta.1"
+  version "0.20.0-beta.2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_macOS_ARM64.tar.gz"
-      sha256 "470d9b5be11555dd827bce24d8dd3cd29d43a30ce3469298162e5b2ee709689c"
+    if Hardware::CPU.intel?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_64bit.tar.gz"
+      sha256 "6ea37cb49f44f831e6c18dbbceba7fbbb45f9b00b8f340804f4d286a8670f055"
 
       def install
         bin.install "fury"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_macOS_64bit.tar.gz"
-      sha256 "05c3f4a59c0a82e93b208d4cb166e6ac84cbec6f2bd349e6dba74082307c5819"
+    if Hardware::CPU.arm?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_ARM64.tar.gz"
+      sha256 "10df2f7be0a3f008e7d35c6867bc4d1623af8856602e4b9d6b2b878d787a1ef0"
 
       def install
         bin.install "fury"
@@ -28,16 +28,16 @@ class FuryCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_Linux_ARM64.tar.gz"
-      sha256 "d0693f8c8cd9cc41582f3df434ebcaf9ee4d98298085a10bc7c7b78a235be87d"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_Linux_ARM64.tar.gz"
+      sha256 "99c3d49e04cc0f7f40519884fc18b60970a047437823232f04488f909a1d0735"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.1/fury_0.20.0-beta.1_Linux_64bit.tar.gz"
-      sha256 "001cf437ad08a632e81c27c19dcad7966279c2da3c038b7c42b2672fbcfcff4e"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_Linux_64bit.tar.gz"
+      sha256 "fbcc094a8639f900e9719a0e15dd2ae9071fa4d79d4e753a57ec9fa41f2642c5"
 
       def install
         bin.install "fury"
