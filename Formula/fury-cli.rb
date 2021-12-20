@@ -8,17 +8,17 @@ class FuryCli < Formula
   version "0.20.0-beta.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_64bit.tar.gz"
-      sha256 "e171bb12064b66ca44345e4decdec9de5cece5494b5d3d1c1cc2efd685c98ea9"
+    if Hardware::CPU.arm?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_ARM64.tar.gz"
+      sha256 "c121235bdf558d1996dbef68c0e4b9cdc4367e1adaac95f1a3b8af7df1c94b68"
 
       def install
         bin.install "fury"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_ARM64.tar.gz"
-      sha256 "c99ef1d7365a749d8935c9348a0881b6ee4b4632ae1c45b8b4be2a29dce07e68"
+    if Hardware::CPU.intel?
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_macOS_64bit.tar.gz"
+      sha256 "f3b9105dc92bd53983c563ba3c884089db7d7851d82ff85e976dee3ef35b657a"
 
       def install
         bin.install "fury"
@@ -29,7 +29,7 @@ class FuryCli < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_Linux_ARM64.tar.gz"
-      sha256 "d769f8b12e8624615cdfb776f12f46b1032da30bfb9c5a3ae872d2b3a077f403"
+      sha256 "7debc9c857b7940dd2c24c0ba9d6084317766152723b9a587c039aaa2d36db83"
 
       def install
         bin.install "fury"
@@ -37,7 +37,7 @@ class FuryCli < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/gemfury/cli/releases/download/v0.20.0-beta.2/fury_0.20.0-beta.2_Linux_64bit.tar.gz"
-      sha256 "35bae41835277b97dce325e70b609eaf5c6bbe665538ce818125c1bc168c1228"
+      sha256 "530b91288842ee92cb4e8300fe23de72a388d9a4ca7925cdc4d828d1563b37e0"
 
       def install
         bin.install "fury"
