@@ -5,20 +5,20 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.0-rc.1"
+  version "0.20.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-rc.1/fury_0.20.0-rc.1_macOS_64bit.tar.gz"
-      sha256 "ba5b299c537c3b853b084d11bd7fc2d61be0d14eec0f90c216008c3e6a8becf7"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0/fury_0.20.0_macOS_64bit.tar.gz"
+      sha256 "a58086fe3b985a9cbd9712b81b34acb4ef2a8b88bec135b8461a89f8891e6c1e"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-rc.1/fury_0.20.0-rc.1_macOS_ARM64.tar.gz"
-      sha256 "240981110b85855170312a75f3605aced71ff09b467caed8110ddcf929583e01"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0/fury_0.20.0_macOS_ARM64.tar.gz"
+      sha256 "c22e7e293c1d9bacc67af02a7407026e2e025e0774322837e6cba14c9d0466ba"
 
       def install
         bin.install "fury"
@@ -28,16 +28,16 @@ class FuryCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-rc.1/fury_0.20.0-rc.1_Linux_64bit.tar.gz"
-      sha256 "e2890710b6b6a3e9ab7b49d7e8ec7c3a53f00bf1cf7ec0467487e55d6de4edc3"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0/fury_0.20.0_Linux_64bit.tar.gz"
+      sha256 "1f1abe43717a81a205b0d0ea065c20e81e65c5b44fa5db4529eb130b8d14e5f2"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.0-rc.1/fury_0.20.0-rc.1_Linux_ARM64.tar.gz"
-      sha256 "0284d5ce77fb0f96958b21c1ef26acc3a6601748c495d4df51e72177487ed912"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.0/fury_0.20.0_Linux_ARM64.tar.gz"
+      sha256 "6a75ff980448419dcf3e42780f33ae53237753464d5cb0380b6d49556d8afc8e"
 
       def install
         bin.install "fury"
