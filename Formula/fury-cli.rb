@@ -5,20 +5,20 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.20.1"
+  version "0.20.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.1/fury_0.20.1_macOS_ARM64.tar.gz"
-      sha256 "4c02e7f492a8b4b35357d982ce4db662be0eae3de8de7967d2a5017889756033"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.2/fury_0.20.2_macOS_ARM64.tar.gz"
+      sha256 "b58adcf23dcb1c902e34d69a7e36646ddaad81f2e0c0ab0a780585db1ab8bff7"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.1/fury_0.20.1_macOS_64bit.tar.gz"
-      sha256 "d53b93c61123e09aefbf4afb33513d19a320121de8f4f9b42c8708abf5c636b9"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.2/fury_0.20.2_macOS_64bit.tar.gz"
+      sha256 "df317e2b206df9dc0eefd7cb1dbd49dbeeb6336a34dd0ad10e9bfb15621a3d6b"
 
       def install
         bin.install "fury"
@@ -28,16 +28,16 @@ class FuryCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.1/fury_0.20.1_Linux_64bit.tar.gz"
-      sha256 "ed721e5180360b0e97f2289ff17cbb702b25e8d5a52a2f9a3d5db10723ee113d"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.2/fury_0.20.2_Linux_64bit.tar.gz"
+      sha256 "10ad3534fe01f08b812802a6dc46a50707b99eff760b8da7ce85a97629a21abc"
 
       def install
         bin.install "fury"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.20.1/fury_0.20.1_Linux_ARM64.tar.gz"
-      sha256 "c25b55f8b65a94e38bcbb692bac5c986c5b5f9ca3b6925acf1dc73b8c4b982a4"
+      url "https://github.com/gemfury/cli/releases/download/v0.20.2/fury_0.20.2_Linux_ARM64.tar.gz"
+      sha256 "c9db17e5891e7adc74e771a1b02990115bd4d3a5980bb5efccdd191bf44fae03"
 
       def install
         bin.install "fury"
