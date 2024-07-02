@@ -5,42 +5,36 @@
 class FuryCli < Formula
   desc "CLI For Gemfury Package Repository"
   homepage "https://gemfury.com/"
-  version "0.21.0"
+  version "0.22.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/gemfury/cli/releases/download/v0.21.0/fury_0.21.0_macOS_ARM64.tar.gz"
-      sha256 "a0d0eb6c34bb884fc61cfa0a8f62265c5380c735a6f8b69268445c7a14721b73"
+    url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_macOS_universal.tar.gz"
+    sha256 "c9d373ea6ce567ac13fe2f520c4596102a8744bc4cc1170bf13c9eb37aae27cd"
 
-      def install
-        bin.install "fury"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.21.0/fury_0.21.0_macOS_64bit.tar.gz"
-      sha256 "158750fd620f26b775ca2c41be433ccbcae6dbee5f87a50f7abef8eedeeef664"
-
-      def install
-        bin.install "fury"
-      end
+    def install
+      bin.install "fury"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.21.0/fury_0.21.0_Linux_ARM64.tar.gz"
-      sha256 "f91e0de3752ef125c99179c25e8d117cf7fd1d4df83a20bba0cf047cb2a7d33c"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_Linux_x86_64.tar.gz"
+        sha256 "2e2fd66395b0ff700a778101b28bbefc71df2714a7f32bb6f6ad72cc406a503a"
 
-      def install
-        bin.install "fury"
+        def install
+          bin.install "fury"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/gemfury/cli/releases/download/v0.21.0/fury_0.21.0_Linux_64bit.tar.gz"
-      sha256 "d435c4dbce86fd01dcf1ad3b80c220a031ef573105967fce4174b10c11b463d0"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_Linux_ARM64.tar.gz"
+        sha256 "774468345cf8557fb50f2eb14c8fc8d648f663ef133a52c9d00e02beef89275e"
 
-      def install
-        bin.install "fury"
+        def install
+          bin.install "fury"
+        end
       end
     end
   end
