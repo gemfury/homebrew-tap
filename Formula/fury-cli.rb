@@ -8,8 +8,8 @@ class FuryCli < Formula
   version "0.22.0"
 
   on_macos do
-    url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_macOS_universal.tar.gz"
-    sha256 "c9d373ea6ce567ac13fe2f520c4596102a8744bc4cc1170bf13c9eb37aae27cd"
+    url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury-cli_0.22.0_macOS_universal.tar.gz"
+    sha256 "7f23ebdc299f36ca98d0686cf60ef18efee97fde99239fdab0e48d6e4b313fee"
 
     def install
       bin.install "fury"
@@ -19,8 +19,8 @@ class FuryCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_Linux_x86_64.tar.gz"
-        sha256 "2e2fd66395b0ff700a778101b28bbefc71df2714a7f32bb6f6ad72cc406a503a"
+        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury-cli_0.22.0_Linux_x86_64.tar.gz"
+        sha256 "6f43e93ef425462156cc44462e26169cdba360ceff37307a41527a20530b33b4"
 
         def install
           bin.install "fury"
@@ -29,8 +29,8 @@ class FuryCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury_0.22.0_Linux_ARM64.tar.gz"
-        sha256 "774468345cf8557fb50f2eb14c8fc8d648f663ef133a52c9d00e02beef89275e"
+        url "https://github.com/gemfury/cli/releases/download/v0.22.0/fury-cli_0.22.0_Linux_ARM64.tar.gz"
+        sha256 "761821af402c13c000a3c9f553f10f708c3dd9b71be5bed4bc802c92667d6eba"
 
         def install
           bin.install "fury"
