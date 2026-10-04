@@ -5,11 +5,11 @@
 class FuryCli < Formula
   desc "CLI for the Gemfury package repository"
   homepage "https://gemfury.com/"
-  version "0.26.0-beta.1"
+  version "0.26.0-beta.2"
 
   on_macos do
-    url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.1/fury-cli_0.26.0-beta.1_macOS_universal.tar.gz"
-    sha256 "d9ae8bf5023a36a301c501359bc6fb1673a8f213a19953c3782e8cec924015d5"
+    url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.2/fury-cli_0.26.0-beta.2_macOS_universal.tar.gz"
+    sha256 "b13e1c2f7a331cbe701307ea0e99014b0115050fbb15a89898cea5a1be36cca6"
 
     define_method(:install) do
       bin.install "fury"
@@ -18,15 +18,15 @@ class FuryCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.1/fury-cli_0.26.0-beta.1_Linux_x86_64.tar.gz"
-      sha256 "15dde6a10574c6fbe6890f2c48b2e5d5d2f8ed6bae4cb14fccd1bcb67f073bca"
+      url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.2/fury-cli_0.26.0-beta.2_Linux_x86_64.tar.gz"
+      sha256 "36de91a039069164515205bb730df56e30d38abb6460cd98fe76c23e3bca303e"
       define_method(:install) do
         bin.install "fury"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.1/fury-cli_0.26.0-beta.1_Linux_ARM64.tar.gz"
-      sha256 "4cb4a300fdbb3b3815de6c0bf654a49a7bd317e94a9b4ae0a15bbc23b42ecc7e"
+      url "https://github.com/gemfury/cli/releases/download/v0.26.0-beta.2/fury-cli_0.26.0-beta.2_Linux_ARM64.tar.gz"
+      sha256 "7618e2f1ba55f64c1df6e1c551d063f4e08b359d8ae9c49b86e5430a610a9b12"
       define_method(:install) do
         bin.install "fury"
       end
