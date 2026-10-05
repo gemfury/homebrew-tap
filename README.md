@@ -11,7 +11,21 @@ Add this tap to your brew installation:
 brew tap gemfury/tap
 ```
 
-Then install packages from this tap:
+Then install the Gemfury CLI from this tap:
+
+```
+brew install --cask fury-cli
+```
+
+If you installed the earlier `fury-cli` formula, `brew update` moves it to
+the cask. Remove the old copy afterwards:
+
+```
+brew uninstall --formula fury-cli
+```
+
+The legacy Ruby CLI remains available as a formula, but cannot be
+installed alongside the cask:
 
 ```
 brew install gemfury
